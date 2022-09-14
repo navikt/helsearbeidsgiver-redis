@@ -28,3 +28,4 @@ spec:
     inbound:
       rules:
         - application: im-akkumulator
+        - application: im-api
