@@ -1,4 +1,4 @@
-name: Deploy topics to dev
+name: Deploy Redis
 
 on:
   push:
@@ -6,13 +6,15 @@ on:
       - main
 
 jobs:
-  deploy-krav-topic-to-dev:
-    name: Deploy redis to dev-gcp
+  deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        cluster: [dev-gcp, prod-gcp]
     steps:
-      - uses: actions/checkout@master
-      - uses: nais/deploy/actions/deploy@master
+      - uses: actions/checkout@v3
+      - uses: nais/deploy/actions/deploy@v1
         env:
           APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
-          CLUSTER: dev-gcp
+          CLUSTER: ${{ matrix.cluster }}
           RESOURCE: deploy/redis-config.yml
