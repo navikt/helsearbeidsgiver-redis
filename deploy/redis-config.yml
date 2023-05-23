@@ -16,10 +16,10 @@ spec:
     max: 1 # More replicas doesn't sync
   resources: # you need to monitor the resource usage yourself
     limits:
-      cpu: 300m
+      cpu: 100m
       memory: 500Mi
     requests:
-      cpu: 300m
+      cpu: 100m
       memory: 500Mi
   service:
     port: 6379
