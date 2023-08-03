@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        cluster: [dev-gcp]
+        cluster: [dev-gcp, prod-gcp]
     steps:
       - uses: actions/checkout@v3
       - uses: nais/deploy/actions/deploy@v1
