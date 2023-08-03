@@ -33,3 +33,4 @@ spec:
         - application: im-inntektservice
         - application: im-notifikasjon
         - application: im-tilgangservice
+        - application: im-trengerservice
