@@ -27,7 +27,6 @@ spec:
   accessPolicy:
     inbound:
       rules:
-        - application: im-akkumulator
         - application: im-api
         - application: im-innsending
         - application: im-inntektservice
