@@ -33,3 +33,4 @@ spec:
         - application: im-notifikasjon
         - application: im-tilgangservice
         - application: im-trengerservice
+        - application: im-bro-spinn
