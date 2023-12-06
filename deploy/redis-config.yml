@@ -34,3 +34,4 @@ spec:
         - application: im-tilgangservice
         - application: im-trengerservice
         - application: im-bro-spinn
+        - application: im-aktiveorgnrservice
