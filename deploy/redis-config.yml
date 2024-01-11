@@ -27,6 +27,7 @@ spec:
   accessPolicy:
     inbound:
       rules:
+        - application: im-aapenimservice
         - application: im-api
         - application: im-innsending
         - application: im-inntektservice
