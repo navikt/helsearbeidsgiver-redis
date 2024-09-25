@@ -29,7 +29,6 @@ spec:
       rules:
         - application: im-aktiveorgnrservice
         - application: im-api
-        - application: im-bro-spinn
         - application: im-innsending
         - application: im-inntekt-selvbestemt-service
         - application: im-inntektservice
