@@ -32,7 +32,6 @@ spec:
         - application: im-innsending
         - application: im-inntekt-selvbestemt-service
         - application: im-inntektservice
-        - application: im-notifikasjon
         - application: im-selvbestemt-hent-im-service
         - application: im-selvbestemt-lagre-im-service
         - application: im-tilgangservice
